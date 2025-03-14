@@ -12,7 +12,7 @@ public class LlogableGestorTest {
     @Test
     public void testLlogableImplementacio() {
         Vehicle cotxe = new Cotxe("1234ABC", "Toyota", "Corolla", 30, 5, new Motor("Gasolina", 120), new Roda[]{new Roda("Michelin", 17), new Roda("Michelin", 17), new Roda("Michelin", 17), new Roda("Michelin", 17)});
-        assertTrue(cotxe instanceof Llogable);
+        assertTrue(cotxe instanceof LlogableGestor);
     }
     
     @Test
