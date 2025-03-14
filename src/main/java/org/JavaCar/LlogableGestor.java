@@ -1,5 +1,6 @@
 package org.JavaCar;
 
-public class LlogableGestor {
-
+public interface LlogableGestor {
+    double calcularPreu(int dies);
 }
+
