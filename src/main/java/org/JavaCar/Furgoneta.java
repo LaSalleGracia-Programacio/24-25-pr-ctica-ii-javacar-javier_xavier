@@ -1,10 +1,10 @@
 package org.JavaCar;
 
 class Furgoneta extends Vehicle {
-    private double capacitatCarga;
+    private final double capacitatCarga;
 
     public Furgoneta(String matricula, String marca, String model, int preuBase,
-                     double capacitatCarga, String motor, Integer rodes) {
+                     double capacitatCarga, Motor motor, Roda[] rodes) {
         super(matricula, marca, model, preuBase, motor, rodes, false);
         this.capacitatCarga = capacitatCarga;
     }
@@ -21,5 +21,7 @@ class Furgoneta extends Vehicle {
         return preuBase;
     }
 }
+
+
 
 
