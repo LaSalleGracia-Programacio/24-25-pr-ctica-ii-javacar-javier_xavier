@@ -1,11 +1,15 @@
 package org.JavaCar;
 
-public class Cotxe extends Vehicle {
+class Cotxe extends Vehicle {
     private int nombrePlaces;
 
-    public Cotxe(String matricula, String marca, String modelo, int preuBase, String motor,
-                 int rodes, boolean etiquetaAmbiental, int nombrePlaces) {
-        super(matricula, marca, modelo, preuBase, motor, rodes, etiquetaAmbiental);
+    public Cotxe(String matricula, String marca, String model, int preuBase, int nombrePlaces,
+                 Motor motor, Roda[] rodes) {
+        super(matricula, marca, model, preuBase, motor, rodes, false);
         this.nombrePlaces = nombrePlaces;
+    }
+
+    public int getNombrePlaces() {
+        return nombrePlaces;
     }
 }
