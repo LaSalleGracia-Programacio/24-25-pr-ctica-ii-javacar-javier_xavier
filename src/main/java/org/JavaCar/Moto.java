@@ -1,7 +1,5 @@
 package org.JavaCar;
 
-public class Moto extends Vehicle{
-    private int Cilindradas;
 class Moto extends Vehicle {
     private final int cilindrada;
 
