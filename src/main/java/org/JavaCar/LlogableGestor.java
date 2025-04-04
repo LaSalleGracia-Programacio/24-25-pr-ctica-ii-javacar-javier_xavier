@@ -1,6 +1,7 @@
 package org.JavaCar;
 
 import java.util.List;
+import java.util.ArrayList;
 
 interface LlogableGestor {
     double calcularPreu(int dies);
@@ -16,5 +17,17 @@ class GestorLloguers {
         }
         return total;
     }
+    public static List<Vehicle> filtrarPerPreu(List<Vehicle> vehicles, double preuMax) {
+        List<Vehicle> resultat = new ArrayList<>();
+        for (Vehicle v : vehicles) {
+            if (v.getPreuBase() <= preuMax) {
+                resultat.add(v);
+            }
+        }
+        return resultat;
+    }
+
 }
+
+
 
